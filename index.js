@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 
-//а сколько модулей включено в node по дефолту?
+//модули по дефолту
 
 var server = new http.Server;
 
@@ -18,6 +18,8 @@ server.on('request', function (req, res) {
     })
 
 });
+
+// 
 
 function router(path) {
     switch (path) {
